@@ -1,0 +1,21 @@
+MONGODB_CONFIG:
+  name: 'ignition_test'                # 自定义数据库连接名
+  type: mongodb                        # 数据库连接类型
+  url: 'mongodb://127.0.0.1:27017'     # 数据库连接地址
+  username: 'root'                     # 用户名
+  password: '123456'                   # 密码
+  database: 'fast_gateway_test'        # 数据库名
+  entities: 'mongo'                    # 加载类型
+  logging: false                       # 数据库打印日志
+  synchronize: true                    # 开启同步数据表功能
+MYSQL_CONFIG:
+  name: "material_test"
+  type: "mysql"
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "123456"
+  database: "material_test"
+  entities: "mysql"
+  logging: true
+  synchronize: true
